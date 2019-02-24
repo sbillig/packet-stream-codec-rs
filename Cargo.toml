@@ -6,12 +6,14 @@ description = "Implementation of the packet-stream codec used by muxrpc, in rust
 repository = "https://github.com/AljoschaMeyer/packet-stream-codec-rs"
 readme = "README.md"
 license = "AGPL-3.0"
+edition = "2018"
 
 [dependencies]
-futures-core = "0.2.0-alpha"
-futures-io = "0.2.0-alpha"
-futures-sink = "0.2.0-alpha"
+futures-core-preview = "0.3.0-alpha.13"
+futures-io-preview = "0.3.0-alpha.13"
+futures-sink-preview = "0.3.0-alpha.13"
+futures-util-preview = "0.3.0-alpha.13"
 
 [dev-dependencies]
-async-ringbuffer = "0.3.0"
-futures = "0.2.0-alpha"
+async-ringbuffer = { git = "https://github.com/sbillig/async-ringbuffer", rev = "0eaab49" }
+futures-executor-preview = "0.3.0-alpha.13"
